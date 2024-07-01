@@ -14,38 +14,97 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="bg-[#f7fafd] text-[#1c202b] text-[0.9rem] leading-[1.4rem] flex items-center justify-center">
 
-  Notifications 3
+	<div class="bg-[#ffffff] w-screen flex flex-col px-[1rem] py-[1.2rem] max-w-[40rem] min-[700px]:my-[4rem] min-[700px]:rounded-[0.8rem]">
+		<!-- header -->
+		<div class="flex justify-between items-center mb-[1rem]">
+			<div class="flex items-center font-bold gap-[0.5rem]">
+				<h1 class="text-[1.4rem]">Notifications</h1>
+				<div class="unread-count bg-[#0a317b] text-[#ffffff] px-[0.65rem] rounded">3</div>
+			</div>
+			<button class="text-[#939dae]">Mark all as read</button>
+		</div>
 
-  Mark all as read
+		<!-- notifications -->
+		<div class="notifications">
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+			<div class="unread py-[0.8rem] px-[1rem] my-[0.5rem] leading-[1.25rem] rounded">
+				<div class="flex gap-[1rem]">
+					<img src="https://raw.githubusercontent.com/Deepali25-K/notifications-page/main/images/avatar-mark-webber.webp" class="w-[2.5rem] h-full" alt="">
+					<div class="text-[#939dae]">
+						<p><span class="text-[#1c202b] font-bold mr-[0.2rem]">Mark Webber</span> reacted to your recent post <span class="text-[#5e6778] font-bold">My first tournament today!</span><span class="unread-dot ml-[0.5rem]"></span></p>
+						<p>1m ago</p>
+					</div>
+				</div>
+			</div>
 
-  Angela Gray followed you
-  5m ago
+			<div class="unread px-[1rem] py-[0.8rem] mb-[0.5rem] rounded">
+				<div class="flex gap-[1rem]">
+					<img src="https://raw.githubusercontent.com/Deepali25-K/notifications-page/main/images/avatar-angela-gray.webp" class="w-[2.5rem] h-full" alt="">
+					<div class="text-[#939dae]">
+						<p><span class="text-[#1c202b] font-bold mr-[0.2rem]">Angela Gray</span> followed you<span class="unread-dot ml-[0.5rem]"></span></p>
+						<p>5m ago</p>
+					</div>
+				</div>
+			</div>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
+			<div class="unread px-[1rem] py-[0.8rem] mb-[0.5rem] rounded">
+				<div class="flex gap-[1rem]">
+					<img src="https://raw.githubusercontent.com/Deepali25-K/notifications-page/main/images/avatar-jacob-thompson.webp" class="w-[2.5rem] h-full" alt="">
+					<div class="text-[#939dae]">
+						<p><span class="text-[#1c202b] font-bold mr-[0.2rem]">Jacob Thompson</span> has joined your group <span class="text-[#0a317b] font-bold">Chess Club</span><span class="unread-dot ml-[0.5rem]"></span></p>
+						<p class="text-[#939dae]">1 day ago</p>
+					</div>
+				</div>
+			</div>
 
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
+			<div class="bg-[] px-[1rem] py-[0.8rem] mb-[0.5rem]">
+				<div class="flex gap-[1rem]">
+					<img src="https://raw.githubusercontent.com/Deepali25-K/notifications-page/main/images/avatar-rizky-hasanuddin.webp" class="w-[2.5rem] h-full" alt="">
+					<div class="text-[#939dae]">
+						<p><span class="text-[#1c202b] font-bold mr-[0.2rem]">Rizky Hasanuddin</span> sent you a private message</p>
+						<p>5 days ago</p>
+						<p class="text-[#939dae] border rounded-md p-[1rem] mt-[0.5rem]">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+							I'm already having lots of fun and improving my game.</p>
+					</div>
+				</div>
+			</div>
 
-  Kimberly Smith commented on your picture
-  1 week ago
+			<div class="bg-[] px-[1rem] py-[0.8rem] mb-[0.5rem]">
+				<div class="flex gap-[1rem]">
+					<img src="https://raw.githubusercontent.com/Deepali25-K/notifications-page/main/images/avatar-kimberly-smith.webp" class="w-[2.5rem] h-full" alt="">
+					<div class="text-[#939dae]">
+						<p><span class="text-[#1c202b] font-bold mr-[0.2rem]">Kimberly Smith</span> commented on your picture</p>
+						<p>1 week ago</p>
+					</div>
+					<img src="https://raw.githubusercontent.com/Deepali25-K/notifications-page/main/images/image-chess.webp" class="w-[2.5rem] h-full" alt="">
+				</div>
+			</div>
 
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
+			<div class="bg-[] px-[1rem] py-[0.8rem] mb-[0.5rem]">
+				<div class="flex gap-[1rem]">
+					<img src="https://raw.githubusercontent.com/Deepali25-K/notifications-page/main/images/avatar-nathan-peterson.webp" class="w-[2.5rem] h-full" alt="">
+					<div class="text-[#939dae]">
+						<p><span class="text-[#1c202b] font-bold mr-[0.2rem]">Nathan Peterson</span> reacted to your recent post <span class="text-[#5e6778] font-bold">5 end-game strategies to increase your win rate</span></p>
+						<p>2 weeks ago</p>
+					</div>
+				</div>
+			</div>
 
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+			<div class="bg-[] px-[1rem] py-[0.8rem] mb-[0.5rem]">
+				<div class="flex gap-[1rem]">
+					<img src="https://raw.githubusercontent.com/Deepali25-K/notifications-page/main/images/avatar-anna-kim.webp" class="w-[2.5rem] h-full" alt="">
+					<div class="text-[#939dae]">
+						<p><span class="text-[#1c202b] font-bold mr-[0.2rem]">Anna Kim</span> left the group <span class="text-[#0a317b] font-bold">Chess Club</span></p>
+						<p>2 weeks ago</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
 </body>
 </html>
